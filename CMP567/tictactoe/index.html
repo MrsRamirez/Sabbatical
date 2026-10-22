@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tic-Tac-Toe Celebration Edition</title>
+   <link rel="stylesheet" href="tictactoe.css">
+   <script src="tictactoe.js" defer></script>
+</head>
+<body>
+   <main class="game-shell">
+      <p class="course-label">CMP 567 · MIDTERM PROJECT</p>
+      <h1>Tic-Tac-Toe</h1>
+      <p class="subtitle">You are <strong>X</strong>. The computer is <strong>O</strong>.</p>
+
+      <div id="gameBoard" aria-label="Tic-tac-toe game board">
+         <button aria-label="Top left"></button>
+         <button aria-label="Top center"></button>
+         <button aria-label="Top right"></button>
+         <button aria-label="Middle left"></button>
+         <button aria-label="Center"></button>
+         <button aria-label="Middle right"></button>
+         <button aria-label="Bottom left"></button>
+         <button aria-label="Bottom center"></button>
+         <button aria-label="Bottom right"></button>
+      </div>
+
+      <p id="turnInfo" aria-live="polite">TURN INFO</p>
+      <button id="newGameButton">New game</button>
+   </main>
+
+   <div id="confettiLayer" aria-hidden="true"></div>
+
+   <div id="winnerBillboard" class="billboard" aria-hidden="true">
+      <div class="billboard-card">
+         <span id="billboardIcon" class="billboard-icon">🏆</span>
+         <p class="billboard-kicker">GAME COMPLETE</p>
+         <h2 id="billboardTitle">You win!</h2>
+         <p id="billboardMessage">Tic-tac-toe champion!</p>
+         <button id="playAgainButton">Play again</button>
+      </div>
+   </div>
+</body>
+</html>
